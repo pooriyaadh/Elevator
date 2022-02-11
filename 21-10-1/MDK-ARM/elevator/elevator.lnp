@@ -1,0 +1,27 @@
+--cpu Cortex-M0
+"elevator\startup_stm32f030x8.o"
+"elevator\main.o"
+"elevator\stm32f0xx_it.o"
+"elevator\stm32f0xx_hal_msp.o"
+"elevator\elevator.o"
+"elevator\system_stm32f0xx.o"
+"elevator\stm32f0xx_hal_iwdg.o"
+"elevator\stm32f0xx_hal_rcc.o"
+"elevator\stm32f0xx_hal_rcc_ex.o"
+"elevator\stm32f0xx_hal.o"
+"elevator\stm32f0xx_hal_i2c.o"
+"elevator\stm32f0xx_hal_i2c_ex.o"
+"elevator\stm32f0xx_hal_gpio.o"
+"elevator\stm32f0xx_hal_dma.o"
+"elevator\stm32f0xx_hal_cortex.o"
+"elevator\stm32f0xx_hal_pwr.o"
+"elevator\stm32f0xx_hal_pwr_ex.o"
+"elevator\stm32f0xx_hal_flash.o"
+"elevator\stm32f0xx_hal_flash_ex.o"
+"elevator\stm32f0xx_hal_exti.o"
+"elevator\stm32f0xx_hal_tim.o"
+"elevator\stm32f0xx_hal_tim_ex.o"
+--library_type=microlib --strict --scatter "elevator\elevator.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "elevator.map" -o elevator\elevator.axf
